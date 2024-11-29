@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0056b3;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003d82;
+        }
+
+        .form-container {
+            margin: 20px auto;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Search for a Movie</h2>
+    <form action="ex2.php" method="POST" enctype="multipart/form-data">
+        <div class="form-container">
+            <label for="MovieName">Enter Partial Movie Name:</label> <br>
+            <input type="text" id="MovieName" name="MovieName" size="30" placeholder="Type movie name here..." required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
+
